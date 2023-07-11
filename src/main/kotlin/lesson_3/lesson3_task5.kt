@@ -1,8 +1,7 @@
 package lesson_3
 
-fun main( )
-{
-    val  initialString = "D2-D4;0"
+fun main() {
+    val initialString = "D2-D4;0"
 
     val partString = initialString.split(';')
 
