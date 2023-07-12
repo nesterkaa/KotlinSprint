@@ -6,6 +6,16 @@ fun main() {
     val airHumidity = 20
     val season = "winter"
 
-    println("Благоприятные ли условия сейчас для роста бобовых? ${isSunWeather && isOpenTent && airHumidity == 20 && season != "winter"}")
+    println(
+        "Благоприятные ли условия сейчас для роста бобовых? ${
+            isSunWeather == IS_SUN_WEATHER
+                    && isOpenTent == IS_OPEN_TENT && airHumidity == AIR_HUMIDITY && season != BAD_SEASON
+        }"
+    )
 
 }
+
+const val IS_SUN_WEATHER = true
+const val IS_OPEN_TENT = true
+const val AIR_HUMIDITY = 20
+const val BAD_SEASON = "winter"
