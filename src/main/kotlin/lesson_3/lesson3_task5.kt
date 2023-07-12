@@ -3,13 +3,11 @@ package lesson_3
 fun main() {
     val initialString = "D2-D4;0"
 
-    val partString = initialString.split(';')
+    val partString = initialString.split(';', '-')
 
-    val movies = partString[0].split('-')
-
-    val moveFrom = movies[0]
-    val moveTo = movies[1]
-    val moveNumber = partString[1]
+    val moveFrom = partString[0]
+    val moveTo = partString[1]
+    val moveNumber = partString[2]
 
 
     println(moveFrom)
